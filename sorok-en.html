@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOROK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#000000;-webkit-font-smoothing:antialiased}
+a{color:#2997FF;text-decoration:none}a:hover{text-decoration:underline}
+</style>
+<style>
+  .demo-step{display:flex;align-items:flex-start;gap:16px;min-height:56px;padding:14px 18px;border-radius:16px;font:inherit;text-align:left;cursor:pointer;color:#1D1D1F;background:transparent;border:2px solid transparent}
+  .demo-step.is-active{background:#F5F5F7;border-color:#1F7A4D}
+  .demo-no{font-size:13px;font-weight:600;color:#1F7A4D}
+  .demo-text{display:flex;flex-direction:column;gap:4px}
+  .demo-label{font-size:16px;font-weight:600}
+  .demo-desc{display:none;font-size:13px;line-height:1.5;color:#6E6E73}
+  .demo-step.is-active .demo-desc{display:block}
+  .demo-arrow{width:44px;height:44px;border-radius:50%;border:0;background:#F5F5F7;color:#1D1D1F;font:inherit;font-size:18px;cursor:pointer}
+  </style>
+  </head>
+<body>
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: #F5F5F7; background: #000000; min-height: 100vh; letter-spacing: -0.01em">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(22,22,23,0.45); backdrop-filter: saturate(180%) blur(24px); -webkit-backdrop-filter: saturate(180%) blur(24px); border-bottom: 1px solid rgba(255,255,255,0.1)">
+    <div style="max-width: 1024px; margin: 0 auto; padding: 0 20px; min-height: 48px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 20px">
+      <a href="index-en.html" aria-label="Home" style="display: inline-flex; align-items: center; min-height: 48px"><img src="assets/logo-white.png" alt="Design Curation Studio." style="display: block; height: 32px; width: auto"></a>
+      <nav aria-label="Main menu" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 28px; font-family: 'Helvetica Neue', Helvetica, Arial, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0">
+        <a href="i-key-en.html" style="color: #C7C7CC; display: inline-flex; align-items: center; min-height: 44px; line-height: 1">I-KEY</a>
+        <a href="sorok-en.html" aria-current="page" style="color: #FFFFFF; display: inline-flex; align-items: center; min-height: 44px; line-height: 1">SOROK</a>
+        <a href="designer-en.html" style="color: #C7C7CC; display: inline-flex; align-items: center; min-height: 44px; line-height: 1">Designer</a>
+        <a href="index-en.html" style="color: #C7C7CC; display: inline-flex; align-items: center; min-height: 44px; line-height: 1">Exhibition</a>
+        <span aria-label="Language" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding-left: 20px; border-left: 1px solid rgba(255,255,255,0.18); line-height: 1"><a href="sorok.html" lang="ko" style="color: #A1A1A6">KO</a><span aria-hidden="true" style="color: #A1A1A6">/</span><span style="color: #FFFFFF; font-weight: 600">EN</span></span>
+      </nav>
+    </div>
+  </header>
+
+  <div style="border-bottom: 1px solid #333336">
+    <div style="max-width: 1024px; margin: 0 auto; padding: 0 20px; min-height: 52px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px">
+      <span style="font-size: 17px; font-weight: 600">SOROK</span>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px; font-family: 'Helvetica Neue', Helvetica, Arial, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; font-size: 13px; letter-spacing: 0">
+        <a href="#intro" style="color: #C7C7CC; display: inline-flex; align-items: center; min-height: 44px; line-height: 1">Overview</a>
+        <a href="#scenario" style="color: #C7C7CC; display: inline-flex; align-items: center; min-height: 44px; line-height: 1">Scenario</a>
+        <a href="#demo" style="color: #C7C7CC; display: inline-flex; align-items: center; min-height: 44px; line-height: 1">Try it</a>
+      </div>
+    </div>
+  </div>
+
+  <section style="text-align: center; padding: clamp(56px, 8vw, 96px) 20px 0; display: flex; flex-direction: column; align-items: center; gap: 10px; overflow: hidden">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #FF9F0A">Spark Design Awards 2026 Finalist</p>
+    <h1 style="margin: 0; font-size: clamp(38px, 5.6vw, 70px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05">SOROK</h1>
+    <p style="margin: 6px 0 0; max-width: 640px; font-size: clamp(17px, 1.9vw, 22px); line-height: 1.35">A smart nature exploration tool.<br>Turning screen time into green time.</p>
+    <a href="#demo" style="margin-top: 18px; display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 980px; background: #0071E3; color: #FFFFFF; font-size: 14px; text-decoration: none">Try it now</a>
+    <img src="assets/sorok-angle.jpg" alt="SOROK showing a ladybug on its screen" style="display: block; width: 100%; max-width: 984px; aspect-ratio: 4 / 3; margin: 40px 0 clamp(56px, 7vw, 96px); border-radius: 24px; object-fit: cover; background: #FFFFFF">
+  </section>
+
+  <section id="intro" style="background: #161617; padding: clamp(64px, 8vw, 104px) 20px">
+    <div style="max-width: 1024px; margin: 0 auto">
+      <p style="margin: 0 0 12px; text-align: center; font-size: 14px; font-weight: 600; color: #A1A1A6">Concept Overview</p>
+      <h2 style="margin: 0 0 20px; text-align: center; font-size: clamp(26px, 3.5vw, 42px); font-weight: 700; line-height: 1.12; letter-spacing: -0.025em">A device that builds the habit<br>of learning through observation.</h2>
+      <p style="margin: 0 auto 48px; max-width: 680px; text-align: center; font-size: 15px; line-height: 1.75; color: #C7C7CC">SOROK is an innovative smart device that helps children build the habit of self-directed learning through observation. At a time when children are drifting away from nature and becoming addicted to smartphones, SOROK offers a healthy alternative — turning screen time (social media and games) into 'green time' spent connecting with nature.</p>
+      <p style="margin: 0 0 16px; text-align: center; font-size: 14px; font-weight: 600; color: #A1A1A6">Design &amp; Features</p>
+      <p style="margin: 0 auto 32px; max-width: 680px; text-align: center; font-size: 15px; line-height: 1.75; color: #C7C7CC">Unlike conventional digital devices, SOROK combines hands-on nature exploration and smart technology in a child-centered form factor.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+        <div style="background: #232325; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 14px; font-weight: 600; color: #30D158">AI Lens</span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Intuitive AI lens</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #C7C7CC">Recognizes the plants and insects children meet outdoors in real time.</p>
+        </div>
+        <div style="background: #232325; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 14px; font-weight: 600; color: #30D158">Ergonomics</span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Ergonomic interface</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #C7C7CC">A body shaped for children's small hands, an easy one-button dial system, and a built-in macro camera for close-up observation.</p>
+        </div>
+        <div style="background: #232325; border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-size: 14px; font-weight: 600; color: #30D158">Gamification</span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Gamified learning</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #C7C7CC">Going beyond taking photos, learning is designed like play — children scan nature, understand it, and record it in their own ecosystem field guide.</p>
+        </div>
+      </div>
+          <div style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px">
+        <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+          <img src="assets/sorok-back.jpg" alt="Back of SOROK with camera lens" style="display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: 18px; object-fit: cover; background: #FFFFFF">
+          <figcaption style="font-size: 13px; line-height: 1.5; color: #A1A1A6; padding: 0 4px">Back · AI camera lens</figcaption>
+        </figure>
+        <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+          <img src="assets/sorok-lens.jpg" alt="SOROK lens detail" style="display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: 18px; object-fit: cover; background: #FFFFFF">
+          <figcaption style="font-size: 13px; line-height: 1.5; color: #A1A1A6; padding: 0 4px">Lens detail · Built-in macro camera for close observation</figcaption>
+        </figure>
+        <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+          <img src="assets/sorok-side.jpg" alt="SOROK side view" style="display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: 18px; object-fit: cover; background: #FFFFFF">
+          <figcaption style="font-size: 13px; line-height: 1.5; color: #A1A1A6; padding: 0 4px">Side · A body for small hands and a one-button dial</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="scenario" style="max-width: 1024px; margin: 0 auto; padding: clamp(64px, 8vw, 104px) 20px">
+    <p style="margin: 0 0 12px; text-align: center; font-size: 14px; font-weight: 600; color: #A1A1A6">User Experience &amp; Ecosystem</p>
+    <h2 style="margin: 0 0 20px; text-align: center; font-size: clamp(26px, 3.5vw, 42px); font-weight: 700; letter-spacing: -0.025em">From the field to the guide, from the guide to everyday life.</h2>
+    <p style="margin: 0 auto 32px; max-width: 680px; text-align: center; font-size: 15px; line-height: 1.75; color: #C7C7CC">Exploration does not end outdoors — it continues as learning through recording and sharing discoveries.</p>
+    <img src="assets/sorok-use.jpg" alt="A child observing a ladybug on a leaf with SOROK" style="display: block; width: 100%; aspect-ratio: 16 / 9; margin: 0 0 12px; border-radius: 24px; object-fit: cover; background: #161617">
+    <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+      <li style="background: #161617; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 14px; font-weight: 600; color: #30D158">01</span>
+        <h3 style="margin: 0; font-size: 15px; font-weight: 700">Head into the field</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #C7C7CC">Children take SOROK out into nature.</p>
+      </li>
+      <li style="background: #161617; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 14px; font-weight: 600; color: #30D158">02</span>
+        <h3 style="margin: 0; font-size: 15px; font-weight: 700">Scan with the AI lens</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #C7C7CC">They scan plants, insects and other natural elements with the AI camera lens.</p>
+      </li>
+      <li style="background: #161617; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 14px; font-weight: 600; color: #30D158">03</span>
+        <h3 style="margin: 0; font-size: 15px; font-weight: 700">Complete a personal guide</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #C7C7CC">Collected data syncs with the companion tablet and smartphone app to build 'My Personal Digital Nature Guide.'</p>
+      </li>
+      <li style="background: #161617; border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 14px; font-weight: 600; color: #30D158">04</span>
+        <h3 style="margin: 0; font-size: 15px; font-weight: 700">Sketch and share</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #C7C7CC">Children sketch what they found and share it with parents and friends, keeping their curiosity going.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="demo" style="background: #FFFFFF; color: #1D1D1F; padding: clamp(64px, 8vw, 104px) 20px">
+    <div style="max-width: 1024px; margin: 0 auto">
+      <div style="text-align: center; display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px">
+        <p style="margin: 0; font-size: 14px; font-weight: 600; color: #6E6E73">UI demo</p>
+        <h2 style="margin: 0; font-size: clamp(26px, 3.5vw, 42px); font-weight: 700; letter-spacing: -0.025em">Try it yourself.</h2>
+        <p style="margin: 0; font-size: 14px; color: #6E6E73">Follow SOROK's screen flow, from scanning to ecology facts.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: clamp(24px, 5vw, 64px)">
+          <button type="button" id="demo-next-img" aria-label="Show next screen" style="flex: 0 1 420px; min-width: 0; padding: 0; border: 0; background: transparent; cursor: pointer">
+            <img id="demo-img" src="assets/sorok-ui-1-scan.jpg" alt="SOROK screen scanning a ladybug" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; background: #FFFFFF">
+          </button>
+          <div style="flex: 0 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+            <span style="font-size: 13px; font-weight: 600; color: #6E6E73; margin-bottom: 4px">Screen flow · <span id="demo-counter">01 / 04</span></span>
+            <!-- 단계 01: 이미지 경로는 data-img, 설명은 아래 span -->
+            <button type="button" class="demo-step" data-img="assets/sorok-ui-1-scan.jpg" data-alt="SOROK screen scanning a ladybug"><span class="demo-no">01</span><span class="demo-text"><span class="demo-label">Scan</span><span class="demo-desc">Point the AI lens at a subject and it is recognized in real time.</span></span></button>
+          <!-- 단계 02: 이미지 경로는 data-img, 설명은 아래 span -->
+            <button type="button" class="demo-step" data-img="assets/sorok-ui-2-info.jpg" data-alt="Seven-spot ladybird info screen"><span class="demo-no">02</span><span class="demo-text"><span class="demo-label">Learn about it</span><span class="demo-desc">Its name and features are explained in kid-friendly language.</span></span></button>
+          <!-- 단계 03: 이미지 경로는 data-img, 설명은 아래 span -->
+            <button type="button" class="demo-step" data-img="assets/sorok-ui-3-habit.jpg" data-alt="Diet and habits info screen"><span class="demo-no">03</span><span class="demo-text"><span class="demo-label">Diet &amp; habits</span><span class="demo-desc">Learn ecology facts one card at a time.</span></span></button>
+          <!-- 단계 04: 이미지 경로는 data-img, 설명은 아래 span -->
+            <button type="button" class="demo-step" data-img="assets/sorok-ui-4-defense.jpg" data-alt="Defenses info screen"><span class="demo-no">04</span><span class="demo-text"><span class="demo-label">Defenses</span><span class="demo-desc">Swipe through like a game and fill your own field guide.</span></span></button>
+            <div style="display: flex; gap: 8px; margin-top: 8px">
+              <button type="button" id="demo-prev" class="demo-arrow" aria-label="Previous screen">‹</button>
+              <button type="button" id="demo-next" class="demo-arrow" aria-label="Next screen">›</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section style="text-align: center; padding: clamp(64px, 8vw, 104px) 20px; display: flex; flex-direction: column; align-items: center; gap: 10px">
+    <p style="margin: 0; font-size: 14px; font-weight: 600; color: #A1A1A6">Other work</p>
+    <h2 style="margin: 0; font-size: clamp(26px, 3.5vw, 38px); font-weight: 700; letter-spacing: -0.025em">I-KEY</h2>
+    <a href="i-key-en.html" style="font-size: 15px">View ›</a>
+  </section>
+
+  <footer style="background: #161617; font-size: 12px; color: #A1A1A6">
+    <div style="max-width: 1024px; margin: 0 auto; padding: 24px 20px 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; border-top: 1px solid #333336">
+      <span>Kangwon National University, Dept. of Multi Design · Graduation Exhibition 2026 · Design by Jaejeong Shim</span>
+      <span>© 2026 Jaejeong Shim. All rights reserved.</span>
+    </div>
+  </footer>
+
+</div>
+<script>
+  // SOROK UI 체험: 단계 버튼 / 이미지 / 화살표로 화면 전환
+  (function(){
+    var steps=[].slice.call(document.querySelectorAll('.demo-step'));
+    var img=document.getElementById('demo-img'), counter=document.getElementById('demo-counter'), i=0;
+    function show(n){
+      i=(n+steps.length)%steps.length;
+      steps.forEach(function(b,k){b.classList.toggle('is-active',k===i);b.setAttribute('aria-pressed',k===i?'true':'false');});
+      img.src=steps[i].dataset.img; img.alt=steps[i].dataset.alt;
+      counter.textContent='0'+(i+1)+' / 0'+steps.length;
+    }
+    steps.forEach(function(b,k){b.addEventListener('click',function(){show(k);});});
+    document.getElementById('demo-next').addEventListener('click',function(){show(i+1);});
+    document.getElementById('demo-prev').addEventListener('click',function(){show(i-1);});
+    document.getElementById('demo-next-img').addEventListener('click',function(){show(i+1);});
+    steps.forEach(function(b){new Image().src=b.dataset.img;}); // 미리 불러오기
+    show(0);
+  })();
+  </script>
+  </body>
+</html>
